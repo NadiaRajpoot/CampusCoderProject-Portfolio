@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --background: #ffffff;
+    --text-primary: #000;
+    --bg: #262626;
+  
+    --text-secondary: #3aafa9;
+    
+  }
+  
+  [data-theme="dark1"] {
+    --background: #191919;
+    --text-primary: #ffffff;
+    --text-secondary: #3aafa9;
+  }
+
+  .f{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+   color: #ffffff;
+    font-weight: 300;
+    background-color: #262626 ;
+  }
+  .f p i{
+    font-size: 15px;
+    color: #3aafa9 ;
+    margin-left: 4px;
+  }

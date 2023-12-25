@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --background: #fffff;
+  --text-primary: #000;
+  --bg-card: #333;
+  --text-secondary: #3aafa9;
+}
+
+[data-theme="dark"] {
+  --background: #191919;
+  --text-primary: #ffffff;
+  color: var(--text-primary);
+  --bg-card: #f5f5f5;
+}
+
+#about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.a-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+.a-right {
+  flex: 1;
+  display: flex;
+  padding: 23px 23px 0px 0px;
+  flex-direction: column;
+  color: var(--text-primary);
+}
+.a-card.bg {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: var(--bg-card);
+}
+
+.a-card {
+  width: 60%;
+  height: 70vh;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.a-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.a-title {
+  color: var(--bg-card);
+  font-weight: 400s;
+  color: var(--text-primary);
+}
+.a-sub {
+  margin: 20px 0px;
+}
+.a-desc {
+  font-weight: 300;
+}
+
+.a-award-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+
+.a-award {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.a-award-texts {
+  width: 70%;
+}
+.a-award-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--bg-card);
+  color: var(--text-primary);
+}
+
+@media screen and (max-width: 724px) {
+  .a-title {
+    color: var(--bg-card);
+    font-weight: 200s;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  .a-sub {
+    font-size: 1rem;
+
+    padding: 0 30px;
+  }
+  .a-desc {
+    font-size: 15px;
+    padding: 0 30px;
+  }
+  .a-card.bg {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    background-color: var(--bg-card);
+    display: none;
+  }
+
+  .a-card {
+    width: 100%;
+    height: 50vh;
+    border-radius: 0px;
+  }
+
+  .a-img {
+    width: 100%;
+    height: 70%;
+  }
+  #about {
+    flex-direction: column;
+  }
+  .a-left,
+  .a-right {
+    flex: none;
+    width: 100%;
+    height: 500px;
+  }
+  .a-award-texts {
+    width: 50%;
+  }
+  .a-award {
+    margin-left: 15px;
+  }
+}
