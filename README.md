@@ -9,9 +9,9 @@
   
 ## Installation
 
-ProfileMe.dev has a very simple, two-step installation process.
+It has a very simple, two-step installation process.
 
-**1. Install dependencies
+**2.Install dependencies**
 
 ```bash
 npm install
