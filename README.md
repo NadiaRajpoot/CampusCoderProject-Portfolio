@@ -11,7 +11,7 @@
 
 It has a very simple, two-step installation process.
 
-**2.Install dependencies**
+**1.Install dependencies**
 
 ```bash
 npm install
